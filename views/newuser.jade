@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h3= title
+  form#form_add_user(name="adduser", method="post", action="/adduser")
+    input#input_name(type="text", placeholder="name", name="name")
+    br
+    br
+    input#input_age(type="text", placeholder="age", name="age")
+    br
+    br
+    input#input_email(type="text", placeholder="email", name="email")
+    br
+    br
+    button#submit_user(type="submit") submit
+    br
+    br
+
+  a#back-link(href="/") Back to home

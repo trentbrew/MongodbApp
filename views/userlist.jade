@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h3.
+    Users
+  ul
+    each user, i in userlist
+      li#user_list_item name: #{user.name} / age:
+        #{user.age} / email: #{user.email}
+
+  a#back-link(href="/") Back to home
